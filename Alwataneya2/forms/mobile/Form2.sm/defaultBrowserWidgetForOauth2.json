@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizBrowser",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_type_": 4,
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "androidwearos": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "containerweight": 69,
+    "detecttelnumber": true,
+    "htmlstring": "Browser",
+    "id": "defaultBrowserWidgetForOauth2",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g0b96a11dfbe4a4ab12bf96adc644af7",
+    "margininpixel": false,
+    "method": "get",
+    "name": "kony.ui.Browser",
+    "paddinginpixel": false,
+    "parent": "flexlogin",
+    "pf": "Form2",
+    "requesturlconfig": {
+        "URL": "https://etdevconsumeraccess.b2clogin.com/etdevconsumeraccess.onmicrosoft.com/B2C_1A_MYCUSTOMPOLICY/oauth2/v2.0/authorize?scope=openid+profile+offline_access+https://etdevconsumeraccess.onmicrosoft.com/api/demo.read&response_type=code&redirect_uri=https://dev-hcltx.et.ae/authService/100000002/oauth2/callback&state=ac54c6c0-42ce-40d9-af8c-ecc15fdb147e&client_id=f1e16048-d97b-4423-ab95-049ad21fdfa2",
+        "requestMethod": "get"
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "screenlevelwidget": false,
+    "url": "",
+    "wType": "Browser"
+}
