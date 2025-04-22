@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="add-fleet-specifications" passwordencrypted="false" security="authorized_app" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.JwtTokenPreProcesser"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="PUT"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/add-fleet-specifications"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="PUT"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://20.233.107.18/api/v1/fleet/$fleetid"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="PUT"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDA1Ml9kZXYiLCJuYW1lIjoiQWhtZWQgQWJkIGVsbmFlaW0gRWxtZW5heWFyIiwiZ3JvdXBzIjpbIlNhbGVzIE1vZHVsZSIsIkFkbWluIE1vZHVsZSIsIk1hbmFnZW1lbnQgbW9kdWxlIiwiSHlicmlkIE1vZHVsZSIsIkFjY291bnRhbnQgTW9kdWxlIiwiUmVwb3J0IE1vZHVsZSIsIlNlbGxpbmcgTW9kdWxlIiwiRGFzaGJvYXJkIE1vZHVsZSJdLCJqb2JfdGl0bGUiOiJhZG1pbiIsInBlcm1pc3Npb25zIjp7Ik1hbmFnZW1lbnQgbW9kdWxlIjpbIlNhbGVzIEludm9pY2UgZGV0YWlscyIsIlNlbGxlcnMgcmVwb3J0IiwiU2FsZXMgcmVwb3J0IiwiQXVjdGlvbiBMaXN0IiwiUHJvZml0cyBkZXRhaWxzIiwiTW9udGhseSBwcm9maXRzIiwiQ3VzdG9tZXIgbGlzdCIsIkF1Y3Rpb24gQmF0Y2ggbGlzdCIsIlF1YWxpdHkgQXNzdXJhbmNlIiwiRVJQIEludGVncmF0aW9uIiwiU2VsbGVyIExpc3QiLCJSRUFEICYgV1JJVEUiLCJBY3RpdmUgYXVjdGlvbnMiXSwiQWNjb3VudGFudCBNb2R1bGUiOlsiU29sZCB2ZWhpY2xlIiwiU2VsbGVyIEludm9pY2UgbGlzdCIsIkJ1eWVyIGludm9pY2UgbGlzdCIsIlNlbGxlciBQYXltZW50cyIsIkJ1eWVyIHBheW1lbnRzIiwiQ3VzdG9tZXJzIiwiU2VjdXJpdHkgRGVwb3NpdCIsIlRPIERPIExpc3QiLCJCYW5rIFN0YXRlbWVudCIsIlJFQUQgJiBXUklURSIsIkNhciBJbnNwZWN0aW9uIEludm9pY2VzIiwiQnV5ZXIgQ2hhbmdlIEludm9pY2VzIl0sIlJlcG9ydCBNb2R1bGUiOlsiQXVjdGlvbiBFbmQiLCJBY3RpdmUgYXVjdGlvbnMiLCJTdGF0aXN0aWNhbCBSZXBvcnQiLCJDYXIgUHJpY2UgUmVwb3J0IiwiRmVhdHVyZSBDYXIgUHJpY2UgUmVwb3J0IiwiUkVBRCAmIFdSSVRFIiwiRGVsaXZlcmVkIFZlaGljbGVzIl0sIkFkbWluIE1vZHVsZSI6WyJTZXJ2aWNlIGxpc3QiLCJFeHBlbnNlIGxpc3QiLCJVc2VycyBQZXJtaXNzaW9ucyIsIkFkcyBNYW5hZ2VtZW50IiwiRmVhdHVyZXMgTWFuYWdlbWVudCIsIk1ha2VzIGFuZCBtb2RlbHMgTWFuYWdlbWVudCIsIkxvY2F0aW9uIExpc3QiLCJTZXJ2aWNlcyBMaXN0IiwiUkVBRCAmIFdSSVRFIl0sIkRhc2hib2FyZCBNb2R1bGUiOlsiU2FsZXMgQ2hhcnQiLCJQdXJjaGFzZSBDaGFydCIsIlVzZXIgQ2hhcnQiXSwiSHlicmlkIE1vZHVsZSI6WyJPZmZsaW5lIGJpZCBQYWdlICIsIlNob3dzY3JlZW4gUGFnZSJdLCJTZWxsaW5nIE1vZHVsZSI6WyJBZGQgYSBuZXcgY2FyIiwiWW91ciB2ZWhpY2xlcyIsIlJlY2VpdmVkIHZlaGljbGVzIiwiQWN0aXZlIGF1Y3Rpb25zIiwiU29sZCB2ZWhpY2xlcyIsIlVuc29sZCB2ZWhpY2xlcyIsIk15IGludm9pY2VzIiwiTXkgcGF5bWVudHMiLCJQcm9maWxlIiwiVW5hcHByb3ZlZCBWZWhpY2xlIiwiQ29tcGxldGVkIFJlcXVlc3RzIiwiUmVxdWVzdGVkIFNlcnZpY2VzIiwiUkVBRCAmIFdSSVRFIl0sIlNhbGVzIE1vZHVsZSI6WyJSZXF1ZXN0IHZlaGljbGVzIiwiVGVjaG5pY2FsIHZlaGljbGVzIiwiV2FzaGVkIHZlaGljbGVzIiwiUGhvdG8gdmVoaWNsZXMiLCJJbmFjdGl2ZSBhdWN0aW9ucyIsIlNvbGQgdmVoaWNsZXMiLCJVbnNvbGQgdmVoaWNsZXMiLCJBd2FyZGVkIHJlcG9ydCIsIlNvbGQgQXJjaGl2ZSIsIlVuc29sZCBhcmNoaXZlIiwiQWN0aXZlIGF1Y3Rpb25zIiwiVG8gRG8gTGlzdCIsIkFkZCBOZXcgQ2FyIiwiQXVjdGlvbiBCdXllciBEYXRhIiwiQXVjdGlvbiBTZWxsZXIgRGF0YSIsIkFkZCBuZXcgY2FyIGZyb20gRVJQIiwiVW5kZXIgYXBwcm92YWwgRGlyZWN0IFNhbGVzIiwiU3VibWl0dGVkIEJ5IFNlbGxlciIsIkFwcHJvdmVkIEF1Y3Rpb24gYnkgc2VsbGVyIiwiTWFya2V0aW5nIiwiQ3VzdG9tZXIgTGlzdCIsIkFyY2hpdmVkIExpc3QiLCJPcGVyYXRpb24gTG9nIiwiVGVjaG5pY2FsIFRlc3QiLCJSZXF1ZXN0cyIsIlJlcXVlc3RlZCBTZXJ2aWNlcyIsIlNlcnZpY2VzIEluIFByb2Nlc3MiLCJDb21wbGV0ZWQgU2VydmljZSBQcm92aWRlciBSZXF1ZXN0cyIsIkh5YnJpZCBVbnNvbGQgVmVoaWNsZXMiLCJSRUFEICYgV1JJVEUiLCJCdXllciBDaGFuZ2UiLCJCZWZvcmUgQXVjdGlvbiBTZXJ2aWNlcyIsImNvbXBsZXRlZCBJbnNwZWN0aW9uIFNlcnZpY2VzIiwiQ29tcGxldGVkIEJ1eWVyIENoYW5nZSIsIlVuc29sZCBWZWhpY2xlcyIsIkludmVudG9yeSJdfSwiaWF0IjoxNzQ0OTU3MjI5LCJleHAiOjE3NDQ5NjA4MjksImlzcyI6Imh0dHBzOi8vZXQuYWUifQ.2vh0sgHWP_zK5x0m5aAdjgOsM7n8DNQflTmHT1EIa9I" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="jwt_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fleetid" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="B197DA0A-40C6-4271-8C21-5A014340CF69" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="is_technical" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="is_washed" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="milage" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2500" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="milage_type" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="264" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="MTR290E1093" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="motor_no" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="43343" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="no_of_keys" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="571" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ownership" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="428" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="en_ownership_cert" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Owner ship certificate in Arabic" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ar_ownership_cert" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="ownership certificate in English" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="category_id" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="220" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sub_category_id" order="" paramOrder="13" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="456" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="target_selling_price" order="" paramOrder="14" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="45000" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="locations" order="" paramOrder="15" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="492" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="country_origin" order="" paramOrder="16" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="155" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="year_of_making" order="" paramOrder="17" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2007" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="body_type" order="" paramOrder="18" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="252" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="no_of_doors" order="" paramOrder="19" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="25" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="no_of_cylinders" order="" paramOrder="20" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="30" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="colors" order="" paramOrder="21" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="40" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transmission_type" order="" paramOrder="22" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="52" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fuel" order="" paramOrder="23" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="64" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="horse_power" order="" paramOrder="24" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="56" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="details" order="" paramOrder="25" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="[530, 396, 382, 381, 367, 364, 356]" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;  &quot;fleetid&quot;: &quot;$fleetid&quot;,&#10;  &quot;is_technical&quot;: $is_technical,&#10;  &quot;is_washed&quot;: $is_washed,&#10;  &quot;milage&quot;: $milage,&#10;  &quot;milage_type&quot;: $milage_type,&#10;  &quot;chassis_number&quot;: &quot;$chassis_number&quot;,&#10;  &quot;motor_no&quot;: &quot;$motor_no&quot;,&#10;  &quot;no_of_keys&quot;: $no_of_keys,&#10;  &quot;ownership&quot;: $ownership,&#10;  &quot;en_ownership_cert&quot;: &quot;$en_ownership_cert&quot;,&#10;  &quot;ar_ownership_cert&quot;: &quot;$ar_ownership_cert&quot;,&#10;  &quot;category_id&quot;: $category_id,&#10;  &quot;sub_category_id&quot;: $sub_category_id,&#10;  &quot;target_selling_price&quot;: &quot;$target_selling_price&quot;,&#10;  &quot;locations&quot;: $locations,&#10;  &quot;country_origin&quot;: $country_origin,&#10;  &quot;year_of_making&quot;: $year_of_making,&#10;  &quot;body_type&quot;: $body_type,&#10;  &quot;no_of_doors&quot;: $no_of_doors,&#10;  &quot;no_of_cylinders&quot;: $no_of_cylinders,&#10;  &quot;colors&quot;: $colors,&#10;  &quot;transmission_type&quot;: $transmission_type,&#10;  &quot;fuel&quot;: $fuel,&#10;  &quot;horse_power&quot;: $horse_power,&#10;  &quot;details&quot;: $details&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;  &quot;fleetid&quot;: &quot;$fleetid&quot;,&#10;  &quot;is_technical&quot;: $is_technical,&#10;  &quot;is_washed&quot;: $is_washed,&#10;  &quot;milage&quot;: $milage,&#10;  &quot;milage_type&quot;: $milage_type,&#10;  &quot;chassis_number&quot;: &quot;$chassis_number&quot;,&#10;  &quot;motor_no&quot;: &quot;$motor_no&quot;,&#10;  &quot;no_of_keys&quot;: $no_of_keys,&#10;  &quot;ownership&quot;: $ownership,&#10;  &quot;en_ownership_cert&quot;: &quot;$en_ownership_cert&quot;,&#10;  &quot;ar_ownership_cert&quot;: &quot;$ar_ownership_cert&quot;,&#10;  &quot;category_id&quot;: $category_id,&#10;  &quot;sub_category_id&quot;: $sub_category_id,&#10;  &quot;target_selling_price&quot;: &quot;$target_selling_price&quot;,&#10;  &quot;locations&quot;: $locations,&#10;  &quot;country_origin&quot;: $country_origin,&#10;  &quot;year_of_making&quot;: $year_of_making,&#10;  &quot;body_type&quot;: $body_type,&#10;  &quot;no_of_doors&quot;: $no_of_doors,&#10;  &quot;no_of_cylinders&quot;: $no_of_cylinders,&#10;  &quot;colors&quot;: $colors,&#10;  &quot;transmission_type&quot;: $transmission_type,&#10;  &quot;fuel&quot;: $fuel,&#10;  &quot;horse_power&quot;: $horse_power,&#10;  &quot;details&quot;: $details&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

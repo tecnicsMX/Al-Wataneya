@@ -1,0 +1,19 @@
+{
+    "android": {
+        "formslist": {
+            "mvcFormObjects": [
+                "Form1",
+                "Form2",
+                "frmLoginAzure"
+            ],
+            "nonmvcFormObjects": []
+        },
+        "templatesList": {
+            "mvcTemplateObjects": [
+                "SampleRowTemplate",
+                "SampleSectionHeaderTemplate"
+            ],
+            "nonmvcTemplateObjects": []
+        }
+    }
+}

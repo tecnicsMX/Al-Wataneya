@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="user-fleet-recived-vehicles" passwordencrypted="false" security="public" type="dataAdapterConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.tokenUtilV2.ValidateUserPermissionsV4"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/user-fleet-recived-vehicles"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="opcode" value="service"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="entitymetadata" value="{&quot;dml&quot;:false,&quot;query&quot;:&quot;select ao.object_id,ao.title,f.chassis_number,fsd_yom.value as year_of_making,\nf.target_selling_price,f.created_on,u.name as seller_name,u.seller_type,\nf.milage,f.internal_no as orcale_number,f.commission,f.minimum_comission,fsd_location.value as location\n from asset_objects ao\nleft join fleet f on f.object_id = ao.object_id\nleft join master_category_details fsd_location on fsd_location.cat_detail_id = f.location\nleft join users u on u.user_id = ao.created_by\nleft join master_category_details fsd_yom on fsd_yom.cat_detail_id = f.year_of_making\nwhere f.wf_activity_id = 'FVSA' and ao.created_by=@user_id  and ao.status = 'In Progress';&quot;,&quot;overloadPosition&quot;:0,&quot;serviceInput&quot;:[{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;foundrySerivceName&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;user_id&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;}],&quot;serviceOutput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;}"/>
+        <config-param api-version="" appid="" name="metadataformatterobject" value="{&quot;overloadPosition&quot;:0,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;,&quot;dml&quot;:false,&quot;serviceOutput&quot;:[],&quot;displayName&quot;:&quot;CustomQuery&quot;,&quot;qualifiedName&quot;:&quot;dbo_CustomQuery&quot;,&quot;pkgName&quot;:&quot;&quot;,&quot;serviceInput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;qualifiedNameSuffix&quot;:&quot;&quot;}"/>
+        <config-param api-version="" appid="" name="isCustomQuery" value="true"/>
+        <config-param api-version="" appid="" name="customQuery" value="select ao.object_id,ao.title,f.chassis_number,fsd_yom.value as year_of_making,&#10;f.target_selling_price,f.created_on,u.name as seller_name,u.seller_type,&#10;f.milage,f.internal_no as orcale_number,f.commission,f.minimum_comission,fsd_location.value as location&#10; from asset_objects ao&#10;left join fleet f on f.object_id = ao.object_id&#10;left join master_category_details fsd_location on fsd_location.cat_detail_id = f.location&#10;left join users u on u.user_id = ao.created_by&#10;left join master_category_details fsd_yom on fsd_yom.cat_detail_id = f.year_of_making&#10;where f.wf_activity_id = 'FVSA' and ao.created_by=@user_id  and ao.status = 'In Progress';"/>
+        <config-param api-version="" appid="" name="password" value="et_dev@12"/>
+        <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
+        <config-param api-version="" appid="" name="advancedSettings" value=""/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true"/>
+        <config-param api-version="" appid="" name="jdbcClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <config-param api-version="" appid="" name="userId" value="et_dev_awa_tx_user"/>
+        <config-param api-version="" appid="" name="maxPoolSize" value=""/>
+        <config-param api-version="" appid="" name="connectionTimeout" value=""/>
+        <config-param api-version="" appid="" name="authservicetype" value="IdentityProvider"/>
+        <config-param api-version="" appid="" name="adaptertype" value="CUSTOM"/>
+        <config-param api-version="" appid="" name="basepackage" value="com.kony.rdbms"/>
+        <config-param api-version="" appid="" name="identityProviderType" value=""/>
+        <config-param api-version="" appid="" name="identityProvider" value=""/>
+        <config-param api-version="" appid="" name="mapped_to" value="dbo.CustomQuery"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzczMDE4MzQtNmY2NS00ZmUwLWI1NmItYjBkM2JhMDE2Y2U1IiwibmFtZSI6ImFkbWluMSIsImdyb3VwcyI6WyJTYWxlcyBNb2R1bGUiLCJBZG1pbiBNb2R1bGUiLCJNYW5hZ2VtZW50IG1vZHVsZSIsIkh5YnJpZCBNb2R1bGUiLCJBY2NvdW50YW50IE1vZHVsZSIsIlJlcG9ydCBNb2R1bGUiLCJTZWxsaW5nIE1vZHVsZSIsIkRhc2hib2FyZCBNb2R1bGUiXSwiam9iX3RpdGxlIjpudWxsLCJwZXJtaXNzaW9ucyI6eyJBY2NvdW50YW50IE1vZHVsZSI6WyJCYW5rIFN0YXRlbWVudCIsIlJFQUQgJiBXUklURSIsIkNhciBJbnNwZWN0aW9uIEludm9pY2VzIiwiQnV5ZXIgQ2hhbmdlIEludm9pY2VzIiwiU29sZCB2ZWhpY2xlIiwiU2VsbGVyIEludm9pY2UgbGlzdCIsIkJ1eWVyIGludm9pY2UgbGlzdCIsIlNlbGxlciBQYXltZW50cyIsIkJ1eWVyIHBheW1lbnRzIiwiQ3VzdG9tZXJzIiwiU2VjdXJpdHkgRGVwb3NpdCIsIlRPIERPIExpc3QiXSwiQWRtaW4gTW9kdWxlIjpbIlNlcnZpY2UgbGlzdCIsIkV4cGVuc2UgbGlzdCIsIlVzZXJzIFBlcm1pc3Npb25zIiwiQWRzIE1hbmFnZW1lbnQiLCJGZWF0dXJlcyBNYW5hZ2VtZW50IiwiTWFrZXMgYW5kIG1vZGVscyBNYW5hZ2VtZW50IiwiTG9jYXRpb24gTGlzdCIsIlNlcnZpY2VzIExpc3QiLCJSRUFEICYgV1JJVEUiXSwiRGFzaGJvYXJkIE1vZHVsZSI6WyJTYWxlcyBDaGFydCIsIlB1cmNoYXNlIENoYXJ0IiwiVXNlciBDaGFydCJdLCJIeWJyaWQgTW9kdWxlIjpbIk9mZmxpbmUgYmlkIFBhZ2UgIiwiU2hvd3NjcmVlbiBQYWdlIl0sIk1hbmFnZW1lbnQgbW9kdWxlIjpbIkFjdGl2ZSBhdWN0aW9ucyIsIlNhbGVzIEludm9pY2UgZGV0YWlscyIsIlNlbGxlcnMgcmVwb3J0IiwiU2FsZXMgcmVwb3J0IiwiQXVjdGlvbiBMaXN0IiwiUHJvZml0cyBkZXRhaWxzIiwiTW9udGhseSBwcm9maXRzIiwiQ3VzdG9tZXIgbGlzdCIsIkF1Y3Rpb24gQmF0Y2ggbGlzdCIsIlF1YWxpdHkgQXNzdXJhbmNlIiwiRVJQIEludGVncmF0aW9uIiwiU2VsbGVyIExpc3QiLCJSRUFEICYgV1JJVEUiXSwiUmVwb3J0IE1vZHVsZSI6WyJBdWN0aW9uIEVuZCIsIkFjdGl2ZSBhdWN0aW9ucyIsIlN0YXRpc3RpY2FsIFJlcG9ydCIsIkNhciBQcmljZSBSZXBvcnQiLCJGZWF0dXJlIENhciBQcmljZSBSZXBvcnQiLCJSRUFEICYgV1JJVEUiLCJEZWxpdmVyZWQgVmVoaWNsZXMiXSwiU2FsZXMgTW9kdWxlIjpbIlJlcXVlc3QgdmVoaWNsZXMiLCJUZWNobmljYWwgdmVoaWNsZXMiLCJXYXNoZWQgdmVoaWNsZXMiLCJQaG90byB2ZWhpY2xlcyIsIkluYWN0aXZlIGF1Y3Rpb25zIiwiU29sZCB2ZWhpY2xlcyIsIlVuc29sZCB2ZWhpY2xlcyIsIkF3YXJkZWQgcmVwb3J0IiwiU29sZCBBcmNoaXZlIiwiVW5zb2xkIGFyY2hpdmUiLCJBY3RpdmUgYXVjdGlvbnMiLCJUbyBEbyBMaXN0IiwiQWRkIE5ldyBDYXIiLCJBdWN0aW9uIEJ1eWVyIERhdGEiLCJBdWN0aW9uIFNlbGxlciBEYXRhIiwiQWRkIG5ldyBjYXIgZnJvbSBFUlAiLCJVbmRlciBhcHByb3ZhbCBEaXJlY3QgU2FsZXMiLCJTdWJtaXR0ZWQgQnkgU2VsbGVyIiwiQXBwcm92ZWQgQXVjdGlvbiBieSBzZWxsZXIiLCJNYXJrZXRpbmciLCJDdXN0b21lciBMaXN0IiwiQXJjaGl2ZWQgTGlzdCIsIk9wZXJhdGlvbiBMb2ciLCJUZWNobmljYWwgVGVzdCIsIlJlcXVlc3RzIiwiUmVxdWVzdGVkIFNlcnZpY2VzIiwiU2VydmljZXMgSW4gUHJvY2VzcyIsIkNvbXBsZXRlZCBTZXJ2aWNlIFByb3ZpZGVyIFJlcXVlc3RzIiwiSHlicmlkIFVuc29sZCBWZWhpY2xlcyIsIlJFQUQgJiBXUklURSIsIkJ1eWVyIENoYW5nZSIsIkJlZm9yZSBBdWN0aW9uIFNlcnZpY2VzIiwiY29tcGxldGVkIEluc3BlY3Rpb24gU2VydmljZXMiLCJDb21wbGV0ZWQgQnV5ZXIgQ2hhbmdlIiwiVW5zb2xkIFZlaGljbGVzIiwiSW52ZW50b3J5Il0sIlNlbGxpbmcgTW9kdWxlIjpbIkFkZCBhIG5ldyBjYXIiLCJZb3VyIHZlaGljbGVzIiwiUmVjZWl2ZWQgdmVoaWNsZXMiLCJBY3RpdmUgYXVjdGlvbnMiLCJTb2xkIHZlaGljbGVzIiwiVW5zb2xkIHZlaGljbGVzIiwiTXkgaW52b2ljZXMiLCJNeSBwYXltZW50cyIsIlByb2ZpbGUiLCJVbmFwcHJvdmVkIFZlaGljbGUiLCJDb21wbGV0ZWQgUmVxdWVzdHMiLCJSZXF1ZXN0ZWQgU2VydmljZXMiLCJSRUFEICYgV1JJVEUiXX0sImlhdCI6MTc0NDcxNjI1NSwiZXhwIjoxNzQ0NzE5ODU1LCJpc3MiOiJodHRwczovL2V0LmFlIn0.6hVFLggdwkzs7Im1J-BVVdATtcLRNTWYY2oJJuO9XOw" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="4052" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="Received vehicles" description="" encode="true" format="None" formatvalue="" name="foundrySerivceName" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Received vehicles" value="Received vehicles" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

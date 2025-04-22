@@ -1,0 +1,241 @@
+//Android Gradle build Script:Start
+import org.apache.tools.ant.taskdefs.condition.Os
+import java.util.regex.Pattern
+
+
+buildscript {
+    repositories {
+		//Gradle External Repositories
+		google() 
+        jcenter()
+		mavenCentral()
+		//HPHX-20852: Holding Huawei Support
+		//
+    }
+    dependencies {
+		//Gradle Build External Dependencies
+        classpath 'com.android.tools.build:gradle:8.3.0'
+        
+		
+		//HPHX-20852: Holding Huawei Support
+		//
+    }
+}
+apply plugin: 'com.android.application'
+//HPHX-20852: Holding Huawei Support
+//
+
+def doExtractStringFromManifest(name) {
+     def manifestFile = file(android.sourceSets.main.manifest.srcFile)
+     def pattern = Pattern.compile(name + "=\"(\\S+)\"")
+     def matcher = pattern.matcher(manifestFile.getText())
+     matcher.find()
+     return matcher.group(1)
+}
+
+
+dependencies {
+	//Android Project Dependencies :Start
+	
+	
+	implementation 'androidx.multidex:multidex:2.0.1'
+    
+    
+	
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+  implementation 'androidx.appcompat:appcompat:1.0.2'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+    
+    
+	
+
+
+	
+	
+	implementation 'com.android.support:exifinterface:28.0.0'
+	
+	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
+    
+	
+    
+    
+	
+	
+	
+	
+	
+	implementation 'org.apache.httpcomponents.client5:httpclient5:5.2'
+	implementation 'org.apache.httpcomponents.core5:httpcore5:5.2'
+	implementation 'androidx.appcompat:appcompat:1.6.1'
+	implementation 'androidx.activity:activity:1.7.2'
+	implementation 'androidx.core:core:1.7.0'
+	/*HPHX-20852: Holding Huawei Support
+	
+	
+	
+	*/
+    implementation fileTree(dir: 'libs', exclude: [], include:[ '*.jar'])
+	//Android Project Dependencies :End
+}
+
+fileTree(dir: 'libs', include: '**/*.aar')
+        .each { File file ->
+    dependencies.add("implementation", [name: file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name }, ext: 'aar'])
+}
+
+android {
+	//Android build options:Start
+	compileSdkVersion  'android-35'
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+    buildToolsVersion '34.0.0'
+	packagingOptions {
+		//Project packaging options:Start
+		exclude 'META-INF/DEPENDENCIES'
+		exclude 'META-INF/LICENSE'
+		exclude 'META-INF/LICENSE.txt'
+		exclude 'META-INF/license.txt'
+		exclude 'META-INF/NOTICE'
+		exclude 'META-INF/NOTICE.txt'
+		exclude 'META-INF/notice.txt'
+		exclude 'META-INF/ASL2.0'
+		exclude 'MANIFEST.MF'
+		pickFirst  'mozilla/public-suffix-list.txt'
+		//Project packaging options:End
+	}	
+	def splitapk = false
+	if(splitapk){
+		splits {
+			// Configures multiple APKs based on ABI.
+			abi {
+			  // Enables building multiple APKs per ABI.
+			  enable true
+			  // By default all ABIs are included, so use reset() and include to specify that we only
+			  // want APKs for x86 and x86_64.
+			  // Resets the list of ABIs that Gradle should create APKs for to none.
+			  reset()
+			  // Specifies a list of ABIs that Gradle should create APKs for.
+			  include 'arm64-v8a'
+			  // Specifies that we do not want to also generate a universal APK that includes all ABIs.
+			  universalApk true
+			}
+		  }
+	}
+    defaultConfig {
+		//Project Default Config:Start
+		
+		targetSdkVersion 34
+		minSdkVersion 21
+        multiDexEnabled true
+        sourceSets.main {
+			//Project folder mapping:Start
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets','resources']
+            jni.srcDirs = [] //disable automatic ndk-build call
+            jniLibs.srcDir 'libs' //set .so files location to libs
+			//Project folder mapping:End
+        }
+		dexOptions { 
+            //Dexing Options:Start
+            javaMaxHeapSize "2048M"
+            //Dexing Options:End
+            jumboMode true
+		}
+
+		applicationId = doExtractStringFromManifest("package")
+		//AGP 8x need this to be added
+		namespace = "$applicationId"
+		externalNativeBuild {
+			cmake {
+				cppFlags "-fstack-protector-all"
+			}
+		}
+		//ABI Filters:Start
+		ndk {
+            abiFilters 'arm64-v8a'
+		}		
+		//ABI Filters:End		
+		//Project Default Config:End
+		
+		def keystorePropertiesFile = file("$projectDir/../keystore.properties")		
+		if(keystorePropertiesFile.exists()){
+			def keystoreProperties = new Properties()
+			keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+			def keystoreFile = file(keystoreProperties['keyStoreFilePath'])
+			if(keystoreFile.exists()){
+				signingConfigs {
+						release {
+							keyAlias keystoreProperties['keyAlias']
+							keyPassword keystoreProperties['keyPassword']
+							storeFile keystoreFile
+							storePassword keystoreProperties['keyStorePassword']
+						}
+				}
+				buildTypes {
+					release {
+						minifyEnabled false
+						shrinkResources false
+						signingConfig signingConfigs.release
+					}
+					debug {
+						shrinkResources false
+						minifyEnabled false // R8 will be disabled.
+					}
+				}
+		}
+		}		
+    }
+	def abiCodes = ['armeabi-v7a':1, 'x86':2, 'arm64-v8a':3, 'x86_64':4]
+	def baseVersionCode = null;	
+	String apkPaths = "\n"
+	applicationVariants.all { variant ->
+	variant.outputs.each { output ->
+
+		String name = output.baseName
+		String filePath = output.outputFile
+		println "OutputData from gradle Name "+name
+		println "OutputData from gradle fileName "+filePath
+
+		apkPaths=apkPaths+"\n"+name+"="+filePath
+			if(splitapk){
+				baseVersionCode = abiCodes.get(output.getFilter(output.ABI))
+				if(baseVersionCode != null){
+				output.versionCodeOverride = baseVersionCode * 1000 + variant.versionCode
+				}
+			}
+	}
+	file("outputAPKVariants.properties").text=apkPaths
+    }
+    //Android build options:End
+}
+allprojects {
+    repositories {
+		//Gradle Build Depencency Repositories
+        maven {
+            url "https://maven.google.com"
+        }
+		//HPHX-20852: Holding Huawei Support
+		//
+        jcenter()
+		mavenCentral()
+        flatDir { 
+			dirs 'libs'
+        }		
+		def hasCordovaLibs = file('CordovaAssetsLib/libs').exists()
+		if (hasCordovaLibs) {
+			flatDir { 
+				dirs 'CordovaAssetsLib/libs'
+			}	
+		}	
+    }
+}
+
+
+
+//Android Gradle build Script:End

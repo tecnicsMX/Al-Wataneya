@@ -1,0 +1,29 @@
+{
+    "AS_Button_hd570523cee549a384a30c26fd7bbe46": {
+        "id": "AS_Button_hd570523cee549a384a30c26fd7bbe46",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bcfd1f01b73548328a811b81414e8756"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d21a229ddc05447d97a191b3be108639",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onLoginClick",
+            "display": "onLoginClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

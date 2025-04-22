@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="create-service-request" passwordencrypted="false" security="authorized_app" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.JwtTokenPreProcesser"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/create-service-request"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://20.233.107.18/api/v1/service-request/"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="jwt_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDA1Ml9kZXYiLCJuYW1lIjoiQWhtZWQgQWJkIGVsbmFlaW0gRWxtZW5heWFyIiwiZ3JvdXBzIjpbIlNhbGVzIE1vZHVsZSIsIkFkbWluIE1vZHVsZSIsIk1hbmFnZW1lbnQgbW9kdWxlIiwiSHlicmlkIE1vZHVsZSIsIkFjY291bnRhbnQgTW9kdWxlIiwiUmVwb3J0IE1vZHVsZSIsIlNlbGxpbmcgTW9kdWxlIiwiRGFzaGJvYXJkIE1vZHVsZSJdLCJqb2JfdGl0bGUiOiJhZG1pbiIsInBlcm1pc3Npb25zIjp7Ik1hbmFnZW1lbnQgbW9kdWxlIjpbIlNhbGVzIEludm9pY2UgZGV0YWlscyIsIlNlbGxlcnMgcmVwb3J0IiwiU2FsZXMgcmVwb3J0IiwiQXVjdGlvbiBMaXN0IiwiUHJvZml0cyBkZXRhaWxzIiwiTW9udGhseSBwcm9maXRzIiwiQ3VzdG9tZXIgbGlzdCIsIkF1Y3Rpb24gQmF0Y2ggbGlzdCIsIlF1YWxpdHkgQXNzdXJhbmNlIiwiRVJQIEludGVncmF0aW9uIiwiU2VsbGVyIExpc3QiLCJSRUFEICYgV1JJVEUiLCJBY3RpdmUgYXVjdGlvbnMiXSwiQWNjb3VudGFudCBNb2R1bGUiOlsiU29sZCB2ZWhpY2xlIiwiU2VsbGVyIEludm9pY2UgbGlzdCIsIkJ1eWVyIGludm9pY2UgbGlzdCIsIlNlbGxlciBQYXltZW50cyIsIkJ1eWVyIHBheW1lbnRzIiwiQ3VzdG9tZXJzIiwiU2VjdXJpdHkgRGVwb3NpdCIsIlRPIERPIExpc3QiLCJCYW5rIFN0YXRlbWVudCIsIlJFQUQgJiBXUklURSIsIkNhciBJbnNwZWN0aW9uIEludm9pY2VzIiwiQnV5ZXIgQ2hhbmdlIEludm9pY2VzIl0sIlJlcG9ydCBNb2R1bGUiOlsiQXVjdGlvbiBFbmQiLCJBY3RpdmUgYXVjdGlvbnMiLCJTdGF0aXN0aWNhbCBSZXBvcnQiLCJDYXIgUHJpY2UgUmVwb3J0IiwiRmVhdHVyZSBDYXIgUHJpY2UgUmVwb3J0IiwiUkVBRCAmIFdSSVRFIiwiRGVsaXZlcmVkIFZlaGljbGVzIl0sIkFkbWluIE1vZHVsZSI6WyJTZXJ2aWNlIGxpc3QiLCJFeHBlbnNlIGxpc3QiLCJVc2VycyBQZXJtaXNzaW9ucyIsIkFkcyBNYW5hZ2VtZW50IiwiRmVhdHVyZXMgTWFuYWdlbWVudCIsIk1ha2VzIGFuZCBtb2RlbHMgTWFuYWdlbWVudCIsIkxvY2F0aW9uIExpc3QiLCJTZXJ2aWNlcyBMaXN0IiwiUkVBRCAmIFdSSVRFIl0sIkRhc2hib2FyZCBNb2R1bGUiOlsiU2FsZXMgQ2hhcnQiLCJQdXJjaGFzZSBDaGFydCIsIlVzZXIgQ2hhcnQiXSwiSHlicmlkIE1vZHVsZSI6WyJPZmZsaW5lIGJpZCBQYWdlICIsIlNob3dzY3JlZW4gUGFnZSJdLCJTZWxsaW5nIE1vZHVsZSI6WyJBZGQgYSBuZXcgY2FyIiwiWW91ciB2ZWhpY2xlcyIsIlJlY2VpdmVkIHZlaGljbGVzIiwiQWN0aXZlIGF1Y3Rpb25zIiwiU29sZCB2ZWhpY2xlcyIsIlVuc29sZCB2ZWhpY2xlcyIsIk15IGludm9pY2VzIiwiTXkgcGF5bWVudHMiLCJQcm9maWxlIiwiVW5hcHByb3ZlZCBWZWhpY2xlIiwiQ29tcGxldGVkIFJlcXVlc3RzIiwiUmVxdWVzdGVkIFNlcnZpY2VzIiwiUkVBRCAmIFdSSVRFIl0sIlNhbGVzIE1vZHVsZSI6WyJSZXF1ZXN0IHZlaGljbGVzIiwiVGVjaG5pY2FsIHZlaGljbGVzIiwiV2FzaGVkIHZlaGljbGVzIiwiUGhvdG8gdmVoaWNsZXMiLCJJbmFjdGl2ZSBhdWN0aW9ucyIsIlNvbGQgdmVoaWNsZXMiLCJVbnNvbGQgdmVoaWNsZXMiLCJBd2FyZGVkIHJlcG9ydCIsIlNvbGQgQXJjaGl2ZSIsIlVuc29sZCBhcmNoaXZlIiwiQWN0aXZlIGF1Y3Rpb25zIiwiVG8gRG8gTGlzdCIsIkFkZCBOZXcgQ2FyIiwiQXVjdGlvbiBCdXllciBEYXRhIiwiQXVjdGlvbiBTZWxsZXIgRGF0YSIsIkFkZCBuZXcgY2FyIGZyb20gRVJQIiwiVW5kZXIgYXBwcm92YWwgRGlyZWN0IFNhbGVzIiwiU3VibWl0dGVkIEJ5IFNlbGxlciIsIkFwcHJvdmVkIEF1Y3Rpb24gYnkgc2VsbGVyIiwiTWFya2V0aW5nIiwiQ3VzdG9tZXIgTGlzdCIsIkFyY2hpdmVkIExpc3QiLCJPcGVyYXRpb24gTG9nIiwiVGVjaG5pY2FsIFRlc3QiLCJSZXF1ZXN0cyIsIlJlcXVlc3RlZCBTZXJ2aWNlcyIsIlNlcnZpY2VzIEluIFByb2Nlc3MiLCJDb21wbGV0ZWQgU2VydmljZSBQcm92aWRlciBSZXF1ZXN0cyIsIkh5YnJpZCBVbnNvbGQgVmVoaWNsZXMiLCJSRUFEICYgV1JJVEUiLCJCdXllciBDaGFuZ2UiLCJCZWZvcmUgQXVjdGlvbiBTZXJ2aWNlcyIsImNvbXBsZXRlZCBJbnNwZWN0aW9uIFNlcnZpY2VzIiwiQ29tcGxldGVkIEJ1eWVyIENoYW5nZSIsIlVuc29sZCBWZWhpY2xlcyIsIkludmVudG9yeSJdfSwiaWF0IjoxNzQ0ODg4MzY2LCJleHAiOjE3NDQ4OTE5NjYsImlzcyI6Imh0dHBzOi8vZXQuYWUifQ.Ma3OlBgBhkAcYPR-mX9Cw-2Kbtx14rRa_jX933su9hc" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="service_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="12" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fleet_id" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="B197DA0A-40C6-4271-8C21-5A014340CF69" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="notes" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Test fleet" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="location_name" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Dubai" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="contact_number" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="+971 08292228232" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="mohd nezar" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="emirate" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="UAE" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;service_id&quot;: $service_id,&#10;    &quot;fleet_id&quot;: &quot;$fleet_id&quot;,&#10;    &quot;notes&quot;: &quot;$notes&quot;,&#10;    &quot;location_name&quot;: &quot;$location_name&quot;,&#10;    &quot;contact_number&quot;: &quot;$contact_number&quot;,&#10;    &quot;name&quot;: &quot;$name&quot;,&#10;    &quot;emirate&quot;: &quot;$emirate&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;service_id&quot;: $service_id,&#10;    &quot;fleet_id&quot;: &quot;$fleet_id&quot;,&#10;    &quot;notes&quot;: &quot;$notes&quot;,&#10;    &quot;location_name&quot;: &quot;$location_name&quot;,&#10;    &quot;contact_number&quot;: &quot;$contact_number&quot;,&#10;    &quot;name&quot;: &quot;$name&quot;,&#10;    &quot;emirate&quot;: &quot;$emirate&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="25" parentOrder="0" passnull="false" sms-name="" src="$.message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <record id="data" order="" paramOrder="1" parentOrder="0" src="$.data" isExtended="false">
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="services_id" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="services_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="done_by" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="done_by" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="notes" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="notes" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="service_category" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="service_category" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="auction_id" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="auction_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="received_time" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="received_time" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="contact_number" order="" paramOrder="8" parentOrder="1" passnull="false" sms-name="" src="contact_number" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="approved_by" order="" paramOrder="9" parentOrder="1" passnull="false" sms-name="" src="approved_by" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="location_name" order="" paramOrder="10" parentOrder="1" passnull="false" sms-name="" src="location_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="requested_by" order="" paramOrder="11" parentOrder="1" passnull="false" sms-name="" src="requested_by" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="emirate" order="" paramOrder="12" parentOrder="1" passnull="false" sms-name="" src="emirate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="service_provider_id" order="" paramOrder="13" parentOrder="1" passnull="false" sms-name="" src="service_provider_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="completed_time" order="" paramOrder="14" parentOrder="1" passnull="false" sms-name="" src="completed_time" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="approved_at" order="" paramOrder="15" parentOrder="1" passnull="false" sms-name="" src="approved_at" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="doc_status" order="" paramOrder="16" parentOrder="1" passnull="false" sms-name="" src="doc_status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="17" parentOrder="1" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="service_cost" order="" paramOrder="18" parentOrder="1" passnull="false" sms-name="" src="service_cost" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="edited_at" order="" paramOrder="19" parentOrder="1" passnull="false" sms-name="" src="edited_at" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="assigned_by" order="" paramOrder="20" parentOrder="1" passnull="false" sms-name="" src="assigned_by" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fleet_id" order="" paramOrder="21" parentOrder="1" passnull="false" sms-name="" src="fleet_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="request_id" order="" paramOrder="22" parentOrder="1" passnull="false" sms-name="" src="request_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="requested_at" order="" paramOrder="23" parentOrder="1" passnull="false" sms-name="" src="requested_at" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="24" parentOrder="1" passnull="false" sms-name="" src="status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

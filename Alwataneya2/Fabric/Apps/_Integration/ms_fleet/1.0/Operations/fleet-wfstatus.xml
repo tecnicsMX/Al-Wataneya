@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="fleet-wfstatus" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.JwtTokenPreProcesser"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/fleet-wfstatus"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://20.233.107.18/api/v1/fleet/fleet-status/"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzUzNjAwNzYtZTY4Zi00ODk0LTkxYmEtMzIzYmU3YTZjMTNkIiwibmFtZSI6InNhaXJhbSIsImdyb3VwcyI6WyJBZG1pbiBNb2R1bGUiLCJNYW5hZ2VtZW50IG1vZHVsZSIsIkh5YnJpZCBNb2R1bGUiLCJBY2NvdW50YW50IE1vZHVsZSIsIlJlcG9ydCBNb2R1bGUiLCJEYXNoYm9hcmQgTW9kdWxlIiwiU2VsbGluZyBNb2R1bGUiLCJTYWxlcyBNb2R1bGUiXSwiaXNfY29udHJhY3Rfc2lnbmVkIjp0cnVlLCJqb2JfdGl0bGUiOiJidXllciIsInBlcm1pc3Npb25zIjp7IlNlbGxpbmcgTW9kdWxlIjpbIkFkZCBhIG5ldyBjYXIiLCJZb3VyIHZlaGljbGVzIiwiUmVjZWl2ZWQgdmVoaWNsZXMiLCJBY3RpdmUgYXVjdGlvbnMiLCJTb2xkIHZlaGljbGVzIiwiVW5zb2xkIHZlaGljbGVzIiwiTXkgaW52b2ljZXMiLCJNeSBwYXltZW50cyIsIlByb2ZpbGUiLCJVbmFwcHJvdmVkIFZlaGljbGUiLCJDb21wbGV0ZWQgUmVxdWVzdHMiLCJSZXF1ZXN0ZWQgU2VydmljZXMiLCJSRUFEICYgV1JJVEUiXSwiU2FsZXMgTW9kdWxlIjpbIlJlcXVlc3QgdmVoaWNsZXMiLCJUZWNobmljYWwgdmVoaWNsZXMiLCJXYXNoZWQgdmVoaWNsZXMiLCJQaG90byB2ZWhpY2xlcyIsIkluYWN0aXZlIGF1Y3Rpb25zIiwiU29sZCB2ZWhpY2xlcyIsIlVuc29sZCB2ZWhpY2xlcyIsIkF3YXJkZWQgcmVwb3J0IiwiU29sZCBBcmNoaXZlIiwiVW5zb2xkIGFyY2hpdmUiLCJBY3RpdmUgYXVjdGlvbnMiLCJUbyBEbyBMaXN0IiwiQWRkIE5ldyBDYXIiLCJBdWN0aW9uIEJ1eWVyIERhdGEiLCJBdWN0aW9uIFNlbGxlciBEYXRhIiwiQWRkIG5ldyBjYXIgZnJvbSBFUlAiLCJVbmRlciBhcHByb3ZhbCBEaXJlY3QgU2FsZXMiLCJTdWJtaXR0ZWQgQnkgU2VsbGVyIiwiQXBwcm92ZWQgQXVjdGlvbiBieSBzZWxsZXIiLCJNYXJrZXRpbmciLCJDdXN0b21lciBMaXN0IiwiQXJjaGl2ZWQgTGlzdCIsIk9wZXJhdGlvbiBMb2ciLCJUZWNobmljYWwgVGVzdCIsIlJlcXVlc3RzIiwiUmVxdWVzdGVkIFNlcnZpY2VzIiwiU2VydmljZXMgSW4gUHJvY2VzcyIsIkNvbXBsZXRlZCBTZXJ2aWNlIFByb3ZpZGVyIFJlcXVlc3RzIiwiSHlicmlkIFVuc29sZCBWZWhpY2xlcyIsIlJFQUQgJiBXUklURSIsIkJ1eWVyIENoYW5nZSIsIkJlZm9yZSBBdWN0aW9uIFNlcnZpY2VzIiwiY29tcGxldGVkIEluc3BlY3Rpb24gU2VydmljZXMiLCJDb21wbGV0ZWQgQnV5ZXIgQ2hhbmdlIiwiVW5zb2xkIFZlaGljbGVzIiwiSW52ZW50b3J5Il0sIk1hbmFnZW1lbnQgbW9kdWxlIjpbIkFjdGl2ZSBhdWN0aW9ucyIsIlNhbGVzIEludm9pY2UgZGV0YWlscyIsIlNlbGxlcnMgcmVwb3J0IiwiU2FsZXMgcmVwb3J0IiwiQXVjdGlvbiBMaXN0IiwiUHJvZml0cyBkZXRhaWxzIiwiTW9udGhseSBwcm9maXRzIiwiQ3VzdG9tZXIgbGlzdCIsIkF1Y3Rpb24gQmF0Y2ggbGlzdCIsIlF1YWxpdHkgQXNzdXJhbmNlIiwiRVJQIEludGVncmF0aW9uIiwiU2VsbGVyIExpc3QiLCJSRUFEICYgV1JJVEUiXSwiQWNjb3VudGFudCBNb2R1bGUiOlsiU29sZCB2ZWhpY2xlIiwiU2VsbGVyIEludm9pY2UgbGlzdCIsIkJ1eWVyIGludm9pY2UgbGlzdCIsIlNlbGxlciBQYXltZW50cyIsIkJ1eWVyIHBheW1lbnRzIiwiQ3VzdG9tZXJzIiwiU2VjdXJpdHkgRGVwb3NpdCIsIlRPIERPIExpc3QiLCJCYW5rIFN0YXRlbWVudCIsIlJFQUQgJiBXUklURSIsIkNhciBJbnNwZWN0aW9uIEludm9pY2VzIiwiQnV5ZXIgQ2hhbmdlIEludm9pY2VzIl0sIlJlcG9ydCBNb2R1bGUiOlsiQXVjdGlvbiBFbmQiLCJBY3RpdmUgYXVjdGlvbnMiLCJTdGF0aXN0aWNhbCBSZXBvcnQiLCJDYXIgUHJpY2UgUmVwb3J0IiwiRmVhdHVyZSBDYXIgUHJpY2UgUmVwb3J0IiwiUkVBRCAmIFdSSVRFIiwiRGVsaXZlcmVkIFZlaGljbGVzIl0sIkFkbWluIE1vZHVsZSI6WyJTZXJ2aWNlIGxpc3QiLCJFeHBlbnNlIGxpc3QiLCJVc2VycyBQZXJtaXNzaW9ucyIsIkFkcyBNYW5hZ2VtZW50IiwiRmVhdHVyZXMgTWFuYWdlbWVudCIsIk1ha2VzIGFuZCBtb2RlbHMgTWFuYWdlbWVudCIsIkxvY2F0aW9uIExpc3QiLCJTZXJ2aWNlcyBMaXN0IiwiUkVBRCAmIFdSSVRFIiwiTWVzc2FnZSBUZW1wbGF0ZXMiXSwiRGFzaGJvYXJkIE1vZHVsZSI6WyJTYWxlcyBDaGFydCIsIlB1cmNoYXNlIENoYXJ0IiwiVXNlciBDaGFydCJdLCJIeWJyaWQgTW9kdWxlIjpbIk9mZmxpbmUgYmlkIFBhZ2UgIiwiU2hvd3NjcmVlbiBQYWdlIl19LCJpYXQiOjE3NDUyMTY5MjQsImV4cCI6MTc0NTIyMDUyNCwiaXNzIjoiaHR0cHM6Ly9ldC5hZSJ9.GBg2jLBxrE4TFU-KuS23xMxNJjbwfeWRto51Tbjp9iQ" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="jwt_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="object_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="36A6E6CD-20BB-46FF-BBAD-849DCDD36ABF" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="action_name" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Upload Payment Slip" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

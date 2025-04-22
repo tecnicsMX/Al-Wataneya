@@ -1,0 +1,73 @@
+{
+    "AS_Button_cbba8a66ee4248c38e0ef4d58c0f980e": {
+        "id": "AS_Button_cbba8a66ee4248c38e0ef4d58c0f980e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form2",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i30eefcc7d5849a0b895c309b1984319"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_IDENTITY_SERVICE_b8f8386277274549be2d7f53de2f23ec",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "DevAzureB2C",
+                "type": "identity",
+                "operationname": "login",
+                "serviceid": "35dc09c3-ef66-4517-843c-7c58038fb5ff",
+                "login_type": "oauth2",
+                "isDeepLinkRequired": false
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": false
+        }, {
+            "id": "SHOW_ALERT_b06c82267c934f37a50f2cd9f575eda3",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "You have successfully logged in.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "INVOKE_IDENTITY_SERVICE_b8f8386277274549be2d7f53de2f23ec",
+            "callbackType": "Success",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "SHOW_ALERT_ea3a4c0a229d4936ab1f0f1593bd52eb",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Login failed. Please try again.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "INVOKE_IDENTITY_SERVICE_b8f8386277274549be2d7f53de2f23ec",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "AS_Button_e436eca9460c4e62b36e42af2a697240": {
+        "id": "AS_Button_e436eca9460c4e62b36e42af2a697240",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d03d193ef4b3494d82893750202ac43f"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_IDENTITY_SERVICE_id26d47b4a5b40cda1dd5db3eb0d644d",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Test1",
+                "type": "identity",
+                "operationname": "login",
+                "serviceid": "e0c96227-8347-4ebb-bc7a-d58219758680",
+                "login_type": "oauth2",
+                "isDeepLinkRequired": true
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": true
+        }, {
+            "id": "LOADING_INDICATOR_ja23b23c509c4703a0e29557c14ee1ab",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_IDENTITY_SERVICE_id26d47b4a5b40cda1dd5db3eb0d644d",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Success",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "LOADING_INDICATOR_ac9dac94a18e4324a0435e293c7c1e08",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_IDENTITY_SERVICE_id26d47b4a5b40cda1dd5db3eb0d644d",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Failure",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "SHOW_ALERT_abdc759135a64f02951bc808f2f06fdd",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "You have successfully logged in.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "INVOKE_IDENTITY_SERVICE_id26d47b4a5b40cda1dd5db3eb0d644d",
+            "callbackType": "Success",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "SHOW_ALERT_a15e5af3420244e58c16811bbe84e24b",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Login failed. Please try again.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "INVOKE_IDENTITY_SERVICE_id26d47b4a5b40cda1dd5db3eb0d644d",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

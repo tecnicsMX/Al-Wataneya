@@ -1,0 +1,16 @@
+{
+  "name" : "TestB2COauth",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"dependent_providers\":[],\"auth_type\":\"oauth2\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"oauthProviderType\":\"default\",\"grant_type\":\"authorization_code\",\"authorization_endpoint\":\"https://tecnicsinternalaz.b2clogin.com/tecnicsinternalaz.onmicrosoft.com/B2C_1_User_Login/oauth2/v2.0/authorize\",\"token_endpoint\":\"https://tecnicsinternalaz.b2clogin.com/tecnicsinternalaz.onmicrosoft.com/B2C_1_User_Login/oauth2/v2.0/token\",\"logout_url\":\"\",\"revoke_url\":\"\",\"client_authentication\":{\"client_id\":\"94afe400-f943-461f-915c-d9bce5bb4774\",\"client_secret\":\"dMi8Q~NaTY7CCulSnyPqp-AZlZQ6NNllBDmxncAD\",\"authentication_scheme\":\"header\",\"client_pvt_key_jwt\":false},\"scope\":\"openid profile email offline_access https://tecnicsinternalaz.onmicrosoft.com/api/demo.read\",\"authentication_scheme\":\"header\",\"profile\":{\"endpoint\":{\"location\":\"url\",\"type\":\"indirect\",\"value\":\"https://tecnicsinternalaz.b2clogin.com/tecnicsinternalaz.onmicrosoft.com/B2C_1_User_Login/v2.0/.well-known/openid-configuration\",\"selector\":\"UserInfoIssuer\"},\"request_method\":\"GET\",\"profile_attribute_selectors\":{\"federation_id\":\"name\",\"email\":\"\",\"first_name\":\"given_name\",\"last_name\":\"family_name\",\"custom_profile_attribute_selectors\":{}}},\"dollarParamPresence\":{\"authorization_endpoint\":false,\"token_endpoint\":false,\"logout_url\":false,\"revoke_url\":false,\"profile_url\":false},\"enable_refresh_login\":true,\"enable_identity_pkce\":false,\"additional_data\":{\"token_request\":[],\"refresh_request\":[],\"profile_request\":[],\"authorize_request\":[],\"revoke_request\":[]}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false,
+  "mapType" : "java.util.HashMap",
+  "empty" : true
+}
