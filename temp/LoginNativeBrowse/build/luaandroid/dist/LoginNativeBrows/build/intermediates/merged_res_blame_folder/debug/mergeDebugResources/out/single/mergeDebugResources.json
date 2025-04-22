@@ -1,0 +1,362 @@
+[
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_300.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_300.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_pageoffdot.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/pageoffdot.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_cal_prev.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_cal_prev.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_himagestrip_left.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_himagestrip_left.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_btn_check_on.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/btn_check_on.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_custom_map_marker_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/custom_map_marker_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_acme.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/acme.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_in_right.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_map_cancelicon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_map_cancelicon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_wheel_bg_2d.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/wheel_bg_2d.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_zoomout.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/zoomout.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_bounce.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/bounce.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_from_bottom.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_from_bottom.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_fade.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/fade.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/xml_searchable.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/xml/searchable.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_shrink_fade_out_from_bottom.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_88.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_88.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_option2.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/option2.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_map_marker_icon_trans.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_map_marker_icon_trans.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_slider.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/slider.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_combo_box_focus_skin.9.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/combo_box_focus_skin.9.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_split_out.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/split_out.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_flexscroll_push.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_flexscroll_push.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_popup_list_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_popup_list_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_back.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/back.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_image_loading_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_image_loading_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_logout.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/logout.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_imagedrag.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/imagedrag.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_150.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_150.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_map_marker_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_map_marker_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_loginnativebrows_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/loginnativebrows_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_list_normal_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_list_normal_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_image_error_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_image_error_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_pinb.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/pinb.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_grow_fade_from_center.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/grow_fade_from_center.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/layout_tabview.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/layout/tabview.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_grow_fade_from_topright.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/grow_fade_from_topright.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_flexscroll_pull.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_flexscroll_pull.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_calcaption.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/calcaption.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_split_in.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/split_in.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_defvideoposter.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/defvideoposter.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_cal_next.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_cal_next.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_option3.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/option3.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_71.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_71.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_btn_check_off.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/btn_check_off.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_android.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/android.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_fancy_anim.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/fancy_anim.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_option4.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/option4.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_page_indicator_active.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/page_indicator_active.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_48.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_48.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_calendar.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/calendar.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_slider_android.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/slider_android.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_cal_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_cal_icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_shake.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/shake.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_split.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/split.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_in_top.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_in_top.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_grow_fade_from_bottomleft.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/grow_fade_from_bottomleft.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_voltmx_logo.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/voltmx_logo.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_splash.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/splash.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_left_out.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/left_out.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_drawer.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_drawer.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_decelerate_interpolator.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/decelerate_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_right_out.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/right_out.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_edit.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/edit.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_left_in.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/left_in.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_himagestrip_right.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_himagestrip_right.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_header_logo.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/header_logo.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_slider_ios7.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/slider_ios7.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_wheel_bg_3d.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/wheel_bg_3d.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_login_logo.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/login_logo.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_in_up.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_in_up.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_grow_from_center.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/grow_from_center.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_calbtn.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/calbtn.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_reveal.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/reveal.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_cycle_interpolator.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/cycle_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_ic_map_righticon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/ic_map_righticon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_create.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/create.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_right_in.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/right_in.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_in_down.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_in_down.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_pageondot.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/pageondot.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_option1.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/option1.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/layout_wheel_item.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/layout/wheel_item.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_accelerate_interpolator.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/accelerate_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_page_indicator_inactive.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/page_indicator_inactive.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_grow_fade_from_bottomright.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/grow_fade_from_bottomright.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_slide_in_left.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_listboxarw.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/listboxarw.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_icon.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/icon.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/drawable_combo_box_normal_skin.9.png.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/drawable/combo_box_normal_skin.9.png"
+    },
+    {
+        "merged": "com.orgname.LoginNativeBrowse-debug-4:/anim_still.xml.flat",
+        "source": "com.orgname.LoginNativeBrowse-LoginNativeBrows-5:/anim/still.xml"
+    }
+]

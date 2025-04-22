@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+	  package="com.orgname.LoginNativeBrowse"
+      android:versionName="1.0.0" android:versionCode="1"   >
+    <application tools:remove="supportsRtl" tools:replace="icon" android:name="com.konylabs.android.KonyApplication" android:label="@string/app_name" android:icon="@drawable/loginnativebrows_icon" >
+	
+
+        <activity android:theme="@style/ActivityNoActionBarTheme" android:name=".LoginNativeBrows" android:label="@string/app_name" android:launchMode="singleTask" android:configChanges="locale|keyboardHidden|orientation|screenSize|screenLayout" android:screenOrientation="sensor" android:windowSoftInputMode="adjustResize"  android:exported="true" >
+			       
+ <intent-filter>                      
+ <action android:name="android.intent.action.MAIN" />                     
+ <category android:name="android.intent.category.LAUNCHER" />                   
+ </intent-filter>
+             <intent-filter>
+ <action android:name="android.intent.action.VIEW" />
+ <category android:name="android.intent.category.BROWSABLE"/>
+ <category android:name="android.intent.category.DEFAULT"/>
+ <data android:scheme="loginnativebrows" />
+ <data android:host="com.orgname.LoginNativeBrowse" />
+ </intent-filter>
+
+             <intent-filter>        <action android:name="android.intent.action.SEARCH" />        <category android:name="android.intent.category.DEFAULT" />       </intent-filter>
+             <meta-data        android:name="android.app.searchable"        android:resource="@xml/searchable" />  
+            
+            	
+</activity>
+
+		
+	   
+	   
+	   <!--HPHX-20852: Holding Huawei Support  -->
+		
+				
+		<meta-data android:name="android.app.default_searchable"           android:value=".KonyMain" />
+		<provider android:authorities="com.orgname.LoginNativeBrowse.LoginNativeBrowsSuggestionProvider"          android:name="com.orgname.LoginNativeBrowse.LoginNativeBrowsSearchSuggestionProvider" />
+		
+		
+        
+       
+		
+		
+        
+		
+		
+		
+		
+	</application>
+    
+	
+	<supports-screens android:anyDensity ="true" android:smallScreens ="true" android:normalScreens ="true" android:largeScreens ="true" android:xlargeScreens ="true" />
+	 <uses-permission android:name="android.permission.INTERNET"/>
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	
+	
+	
+    
+	
+</manifest> 

@@ -1,0 +1,123 @@
+{
+    "controllerTemplateInfoMapping": {
+        "android": {
+            "flxSampleRowTemplateController_mobile": [
+                "flxSampleRowTemplateController"
+            ],
+            "flxSectionHeaderTemplateController_mobile": [
+                "flxSectionHeaderTemplateController"
+            ]
+        }
+    },
+    "controllerformInfoMapping": {
+        "android": {
+            "Form1Controller_mobile": [
+                "Form1Controller"
+            ],
+            "Form2Controller_mobile": [
+                "Form2Controller"
+            ],
+            "frmLoginAzureController_mobile": [
+                "frmLoginAzureController"
+            ]
+        }
+    },
+    "formControllerInfoMapping": {
+        "android": {
+            "Form1": {
+                "controllerActionDir": "Form1Controller",
+                "controllerChannel": "mobile",
+                "controllerName": "Form1Controller"
+            },
+            "Form2": {
+                "controllerActionDir": "Form2Controller",
+                "controllerChannel": "mobile",
+                "controllerName": "Form2Controller"
+            },
+            "frmLoginAzure": {
+                "controllerActionDir": "frmLoginAzureController",
+                "controllerChannel": "mobile",
+                "controllerName": "frmLoginAzureController"
+            }
+        }
+    },
+    "formsifcMapping": {
+        "android": {
+            "Form1": {
+                "ControllerExtensions": [],
+                "appName": "LoginNativeBrowse",
+                "controllerInfo": {
+                    "controllerActionName": "Form1Controller",
+                    "controllerChannel": "mobile",
+                    "controllerName": "Form1Controller"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "Form1",
+                "isMDAForm": false
+            },
+            "Form2": {
+                "ControllerExtensions": [],
+                "appName": "LoginNativeBrowse",
+                "controllerInfo": {
+                    "controllerActionName": "Form2Controller",
+                    "controllerChannel": "mobile",
+                    "controllerName": "Form2Controller"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "Form2",
+                "isMDAForm": false
+            },
+            "frmLoginAzure": {
+                "ControllerExtensions": [],
+                "appName": "LoginNativeBrowse",
+                "controllerInfo": {
+                    "controllerActionName": "frmLoginAzureController",
+                    "controllerChannel": "mobile",
+                    "controllerName": "frmLoginAzureController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "frmLoginAzure",
+                "isMDAForm": false
+            }
+        }
+    },
+    "templateControllerInfoMapping": {
+        "android": {
+            "SampleRowTemplate": {
+                "controllerActionDir": "flxSampleRowTemplateController",
+                "controllerChannel": "mobile",
+                "controllerName": "flxSampleRowTemplateController"
+            },
+            "SampleSectionHeaderTemplate": {
+                "controllerActionDir": "flxSectionHeaderTemplateController",
+                "controllerChannel": "mobile",
+                "controllerName": "flxSectionHeaderTemplateController"
+            }
+        }
+    },
+    "templatesifcMapping": {
+        "android": {
+            "flxSampleRowTemplate": {
+                "appName": "LoginNativeBrowse",
+                "controllerInfo": {
+                    "controllerActionName": "flxSampleRowTemplateController",
+                    "controllerChannel": "mobile",
+                    "controllerName": "flxSampleRowTemplateController"
+                },
+                "friendlyName": "flxSampleRowTemplate",
+                "templateId": "flxSampleRowTemplate"
+            },
+            "flxSectionHeaderTemplate": {
+                "appName": "LoginNativeBrowse",
+                "controllerInfo": {
+                    "controllerActionName": "flxSectionHeaderTemplateController",
+                    "controllerChannel": "mobile",
+                    "controllerName": "flxSectionHeaderTemplateController"
+                },
+                "friendlyName": "flxSectionHeaderTemplate",
+                "templateId": "flxSectionHeaderTemplate"
+            }
+        }
+    },
+    "userwidgetsifcMapping": {}
+}

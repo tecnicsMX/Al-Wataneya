@@ -1,0 +1,142 @@
+{
+    "idToKuidMapping": {
+        "androidwear": {},
+        "desktop": {},
+        "masters": {},
+        "mobile": {
+            "Form1": "d03d193ef4b3494d82893750202ac43f",
+            "Form2": "ab5c6ab8058144bd8093c01169626dee",
+            "SampleRowTemplate": "j75e336fed6147819c2d0db72e1d2fc0",
+            "SampleSectionHeaderTemplate": "id92ab487c7d4d519d362c7133f8bfa5",
+            "frmLoginAzure": "e97757953bdd4d2cbe16031a0d36a051"
+        },
+        "skins": {
+            "defBtnFocus": "s76abf65d54548eeb2158f77c3c77f05",
+            "defBtnNormal": "s9b49f4d9e0c4fc580653dca48dcaa1b",
+            "defDataPanelLoginBtnActive": "s482be17004e4f118b83737c19b254ed",
+            "defDataPanelLoginBtnNormal": "s10847dd3d1e45808d7c5b041aee90f9",
+            "defLabel": "s4145d434ca343ac9cacd00cf05b4e81",
+            "sknLblDescription": "s2a995ca103b4fc8beba65cc966f352a",
+            "sknLblRowHeading": "s791a935b84f43c1872a9ab9d8783aff",
+            "sknLblStrip": "sc1ad468d1b646398532d5e64fe2b571",
+            "sknLblTimeStamp": "s3633c0d3c6e4aeaac8f6d3f5f15ae6e",
+            "sknSampleRowTemplate": "se4b9b53e7b740489bf1d318a4911fa1",
+            "sknSampleSectionHeaderTemplate": "se63cf31ee3841d2805531fcd709a12e",
+            "sknSectionHeaderLabelSkin": "sc604b7cb73d4acf9b32addb2565e44d",
+            "slDynamicNotificationForm": "s9b25f84b1f94c8d88ea06f765415b0e",
+            "slFbox": "s99223cb09774b53ab8fa826ac58f9b6",
+            "slForm": "s499df9b059d4a4ab9e70cd57f985f39",
+            "slImage": "scfc789c44d746708df52d662f81d7c3",
+            "slSplashiOS": "s2ea0e7e88554704a53d188e20a912e6",
+            "slStaticNotificationForm": "se32538de111421dacd1a7900fa2eef4",
+            "slTitleBar": "s0561516c74647df9d184787a6ef83c2",
+            "slWatchForm": "s05c241f1e704d57acd0546a318f8067"
+        },
+        "tablet": {},
+        "userwidgets": {}
+    },
+    "kuidDependencyMap": {
+        "s0561516c74647df9d184787a6ef83c2": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "ab5c6ab8058144bd8093c01169626dee",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "s10847dd3d1e45808d7c5b041aee90f9": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "s2a995ca103b4fc8beba65cc966f352a": [
+            "j75e336fed6147819c2d0db72e1d2fc0"
+        ],
+        "s3633c0d3c6e4aeaac8f6d3f5f15ae6e": [
+            "j75e336fed6147819c2d0db72e1d2fc0"
+        ],
+        "s4145d434ca343ac9cacd00cf05b4e81": [
+            "ab5c6ab8058144bd8093c01169626dee"
+        ],
+        "s482be17004e4f118b83737c19b254ed": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "s499df9b059d4a4ab9e70cd57f985f39": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "ab5c6ab8058144bd8093c01169626dee",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "s791a935b84f43c1872a9ab9d8783aff": [
+            "j75e336fed6147819c2d0db72e1d2fc0"
+        ],
+        "s99223cb09774b53ab8fa826ac58f9b6": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "sc1ad468d1b646398532d5e64fe2b571": [
+            "j75e336fed6147819c2d0db72e1d2fc0"
+        ],
+        "sc604b7cb73d4acf9b32addb2565e44d": [
+            "id92ab487c7d4d519d362c7133f8bfa5"
+        ],
+        "scfc789c44d746708df52d662f81d7c3": [
+            "d03d193ef4b3494d82893750202ac43f",
+            "e97757953bdd4d2cbe16031a0d36a051"
+        ],
+        "se4b9b53e7b740489bf1d318a4911fa1": [
+            "j75e336fed6147819c2d0db72e1d2fc0"
+        ],
+        "se63cf31ee3841d2805531fcd709a12e": [
+            "id92ab487c7d4d519d362c7133f8bfa5"
+        ]
+    },
+    "kuidInfo": {
+        "androidwear": {},
+        "desktop": {},
+        "masters": {},
+        "mobile": {
+            "ab5c6ab8058144bd8093c01169626dee": {
+                "appName": "LoginNativeBrowse",
+                "id": "Form2",
+                "relFormId": "Form2",
+                "templateType": "forms",
+                "widgetInfo": {
+                    "mapWgtPltfrms": [],
+                    "videoWgtPltfrms": []
+                }
+            },
+            "d03d193ef4b3494d82893750202ac43f": {
+                "appName": "LoginNativeBrowse",
+                "id": "Form1",
+                "relFormId": "Form1",
+                "templateType": "forms",
+                "widgetInfo": {
+                    "mapWgtPltfrms": [],
+                    "videoWgtPltfrms": []
+                }
+            },
+            "e97757953bdd4d2cbe16031a0d36a051": {
+                "appName": "LoginNativeBrowse",
+                "id": "frmLoginAzure",
+                "relFormId": "frmLoginAzure",
+                "templateType": "forms",
+                "widgetInfo": {
+                    "mapWgtPltfrms": [],
+                    "videoWgtPltfrms": []
+                }
+            },
+            "id92ab487c7d4d519d362c7133f8bfa5": {
+                "appName": "LoginNativeBrowse",
+                "id": "SampleSectionHeaderTemplate",
+                "templateType": "segments",
+                "topFlexId": "flxSectionHeaderTemplate"
+            },
+            "j75e336fed6147819c2d0db72e1d2fc0": {
+                "appName": "LoginNativeBrowse",
+                "id": "SampleRowTemplate",
+                "templateType": "segments",
+                "topFlexId": "flxSampleRowTemplate"
+            }
+        },
+        "tablet": {},
+        "userwidgets": {}
+    },
+    "userWidgetsKuidToIdMap": {}
+}
